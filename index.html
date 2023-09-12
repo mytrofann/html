@@ -7,187 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EL Gambino - gourment cousine</title>
     <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-
-    <header class="page-header">
-        <a class="page-header__logo" href="#">
-            <img class="page-header__logo-image" src="img/el-gambino-logo.svg" alt="EL Gambino logo">
-        </a>
-        <nav class="main-nav main-nav--closed">
-            <div class="main-nav--wrapper">
-                <ul class="main-nav__list site-list">
-                    <li class="site-list__item">
-                        <a href="#">Menu</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="#">About us</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="#">Offers & discounts</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="#">Space</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="#">Contacts</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <div class="page-header__information">
-            <div class="work-schedule">
-            <p class="work-schedule__title">Working hours:<spa class="work-schedule__hours">mon-sun 12 pm - 01 am</span></p>
-        </div>
-
-        <div class="social">
-            <b class="social__title">Social:</b>
-            <ul class="social__list">
-                <li class="social__item">
-                    <a class="social__link" href="#">instagram</a>
-                </li>
-                <li class="social__item">
-                    <a class="social__link" href="#">facebook</a>
-                </li>
-                <li class="social__item">
-                    <a class="social__link" href="#">youtube</a>
-                </li>
-                <li class="social__item">
-                    <a class="social__link" href="#">twitter</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <section class="offer">
-        <p class="offer__nane">Welcome to our restaurants</p>
-        <h1 class="offer__title">Gourmet cuisine from fresh local ingredients</h1>
-        <p class="offer__description">Enjoy your favorite dishes in our restaurants!</p>
-        <button class="offer__button button">Book a Table</button>
-        <div class="offer__phone">
-            <a class="offer__phone-number" href="tel:+1 (234) 567 89 00">
-                <span class="offer__phone-img">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;max-width:100%" xml:space="preserve" height="100%"><path d="M20,15.01c-1.172,0-2.32-0.183-3.408-0.542c-0.531-0.183-1.134-0.042-1.483,0.314l-2.157,1.629  c-2.475-1.321-4.059-2.904-5.362-5.361l1.585-2.106c0.399-0.399,0.542-0.983,0.371-1.53C9.184,6.319,9,5.17,9,4  c0-0.827-0.673-1.5-1.5-1.5H4C3.173,2.5,2.5,3.173,2.5,4c0,9.649,7.851,17.5,17.5,17.5c0.827,0,1.5-0.673,1.5-1.5v-3.49  C21.5,15.683,20.827,15.01,20,15.01z" style="" fill="currentColor"></path></svg></span>+1 (234) 567 89 00</a>
-        </div>
-    </section>
-  
-    </header>
+    <header data.include="index.header.partial.html"></header>
 
     <main class="index-page-main">
-
-        <section class="booking">
-            <p class="booking__nane">Book a table</p>
-            <h2 class="booking__title">Book a table in advance to plan your perfect dinner!</h2>
-            <p class="booking__description">Make sure you've made the reservation!</p>
-            <button class="booking__button button">Book a Table</button>
-        </section>
-        
-        <section class="cards">
-            <p class="cards__nane">Gift cards</p>
-            <h2 class="cards__title">Treat your loved one to a dinner!</h2>
-            <p class="cards__description">Give your friend, colleague, or relative a voucher to visit our restaurant.</p>
-            <button class="cards__button button" href="#">Conditions</button>
-            <ul class="cards__list">
-                <li class="cards__item">
-                    <img class="cards__item__image" src="img/gift.svg" alt="$50 gift card">
-                    <h3 class="cards__item__title">$50 gift card</h3>
-                    <p class="cards__item__description">This gift card can be used to pay for any dishes and related services in our restaurant during 3 months.</p>
-                    <em class="cards__item__caption"><span>* </span>The gift card does not apply to catering, cocktails, and wine list.</em>
-                    <a class="cards__item__button button" href="#">Buy gift card</a>
-                </li>
-                <li class="cards__item">
-                    <img class="cards__item__image" src="img/gift.svg" alt="$150 gift card">
-                    <h3 class="cards__item__title">$150 gift card</h3>
-                    <p class="cards__item__description">This gift card can be used to pay for any dishes and related services in our restaurant during 6 months.</p>
-                    <em class="cards__item__caption"><span>* </span>The gift card does not apply to catering, cocktails, and wine list.</em>
-                    <a class="cards__item__button button" href="#">Buy gift card</a>
-                </li>
-            </ul>
-            <div class="cards__slider">
-                <ul class="cards__slider__list">
-                    <li class="cards__slider__item">
-                        <img class="cards__slider__img" src="img/salad.jpeg" alt="Salad">
-                    </li>
-                    <li class="cards__slider__item">
-                        <img class="cards__slider__img" src="img/serving-tartare.jpeg" alt="Serving tartare">
-                    </li>
-                    <li class="cards__slider__item">
-                        <img class="cards__slider__img" src="img/steak-with-vegetables.jpeg" alt="Steak with vegetables">
-                    </li>
-                    <li class="cards__slider__item">
-                        <img class="cards__slider__img" src="img/tom-yum.jpeg" alt="Tom yum">
-                    </li>
-                    <li class="cards__slider__item">
-                        <img class="cards__slider__img" src="img/people-drink-wine.jpeg" alt="People drink wine">
-                    </li>
-                    <li class="cards__slider__item">
-                        <img class="cards__slider__img" src="img/rolls.jpeg" alt="Rolls">
-                    </li>
-                    <li class="cards__slider__item">
-                        <img class="cards__slider__img" src="img/steak-serving.jpeg" alt="Steak serving">
-                    </li>
-                    <li class="cards__slider__item">
-                        <img class="cards__slider__img" src="img/glass.jpeg" alt="Glass">
-                    </li>
-                </ul>
-                <button class="cards__slider-button cards__slider-button-prev button"></button>
-                <button class="cards__slider-button cards__slider-button-next button"></button>
-            </div>
-        </section>
-
-        <section class="news">
-            <p class="news__nane">News</p>
-            <h2 class="news__title">Our news & articles</h2>
-            <p class="news__description">Read more about Italian cuisine.</p>
-            <ul class="news__list">
-                <li class="news__item">
-                    <article class="news__content">
-                    <img class="news__content__img" src="img/wine-pairing.webp" alt="Wine pairing">
-                    <h2 class="news__content__title">Wine pairing: What is it?</h2>
-                    <p class="news__content__description">Wine pairing is the process of matching food and wines based on their flavor...</p>
-                    <button class="news__button button">Read more</button>
-                    </article>
-                </li>
-                <li class="news__item">
-                    <article class="news__content">
-                    <img class="news__content__img" src="img/mediterranean-mussel.jpeg" alt="Mediterranean mussel">
-                    <h2 class="news__content__title">The best mediterranean mussel recipes by El Gambino</h2>
-                    <p class="news__content__description">Mussels are popular because they are hearty, flavorful, and full of nutrients. Mussels are a great source of protein, vitamins and minerals.</p>
-                    <button class="news__button button">Read more</button>
-                    </article>
-                </li>
-                <li class="news__item">
-                    <article class="news__content">
-                    <img class="news__content__img" src="img/steaks.jpeg" alt="Steaks">
-                    <h2 class="news__content__title">What types of meat do we use for juicy steaks?</h2>
-                    <p class="news__content__description">The best types of meat for juicy steaks are ribeye, strip, tenderloin, and filet mignon. Ribeye steaks are known for their excellent marbling. </p>
-                    <button class="news__button button">Read more</button>
-                    </article>
-                </li>
-            </ul>
-        </section>
-
-        <section class="advantages">
-            <ul class="advantages__list">
-                <li class="advantages__item">
-                    <h2 class="advantages__title">Delivery</h2>
-                    <p class="advantages__description">Order door-to-door food delivery service and enjoy your favorite food in the convenience of your home.</p>
-                </li>
-                <li class="advantages__item">
-                    <h2 class="advantages__title">Free parking lot</h2>
-                    <p class="advantages__description">We are happy to offer free and safeguarded parking lot to both new and regular clients.</p>
-                </li>
-                <li class="advantages__item">
-                    <h2 class="advantages__title">Table reservation</h2>
-                    <p class="advantages__description">Our restaurant is quite popular, so we recommend you to call us in advance if you want to book a table.</p>
-                </li>
-            </ul>
-        </section>
-        
+        <section data.include="index.section.booking.partial.html"></section>
+        <section data.include="index.section.cards.partial.html"></section>
+        <section data.include="index.section.news.partial.html"></section>
+        <section data.include="index.section.advantages.partial.html"></section>
     </main>
 
     <footer class="page-footer"></footer>
+
+    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
 
 </body>
 
