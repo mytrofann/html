@@ -1,0 +1,30 @@
+.news {
+    background-color: var(--background-color-primary);
+}
+
+.news__nane {
+    color: var(--text-accent-color);
+    font-weight: var(--text-accent-title-weight);
+    font-family: var(--text-accent-title-font);
+    text-transform: var(--text-transform);
+}
+
+.news__list {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.news__list-item {
+    width: 297px;
+}
+
+.list-content__description {
+    font-size: var(--text-size);
+}
+
+@media (min-width: 768px) {
+    .news__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}

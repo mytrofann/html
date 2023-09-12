@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color-primary: rgb(255, 255, 255);
+    --background-color-secondary: #f7f6f2;
+    --background-color-accent: rgb(255, 93, 40);
+    --background-color-photo: #4b566a;
+
+    --text-color: rgb(155, 158, 164);
+    --text-size: 17px;
+    --text-title-color: rgb(75, 86, 106);
+    --text-subtitle-color: rgb(130, 134, 143);
+    --text-accent-color: rgb(255, 93, 40);
+    --text-accent-title-size: 17px;
+    --text-accent-title-weight: 400;
+    --text-accent-title-font: Roboto, sans-serif;
+    --text-title-size: 54px;
+    --text-title-weight: 400;
+    --text-title-font: Volcorn, sans-serif;
+    --text-transform: uppercase;
+
+    --link-color: rgb(130, 134, 143);
+    --link-primary-hover-color: rgb(155, 158, 164);
+    --link-accent-hover-color: #ff5d28;
+    --link-special-color: rgb(166, 58, 24);
+
+    --btn-text-color: #fff;
+    --btn-background-accent-color: rgb(255, 93, 40);
+    --btn-download-background-color: rgb(255, 244, 241);
+    --btn-gift-text-color: #4b566a;
+    --btn-gift-background-color: rgb(250, 251, 251);
+
+    --icon-color: rgb(255, 93, 40);
+
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+button {
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+    border-radius: 7px 25px 25px 25px;
+    color: var(--btn-text-color);
+    background-color: var(--btn-background-accent-color);
+}
+
+li {
+    padding: 0;
+    list-style-type: none;
+}

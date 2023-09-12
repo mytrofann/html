@@ -1,0 +1,15 @@
+.page-header {
+    background-color: var(--);
+}
+
+.page-header__information {
+    display: block;
+}
+
+@media (min-width: 992px) {
+    .page-header__information {
+        display: inline;
+        background-color: var(--background-color-accent);
+    }
+    
+}
