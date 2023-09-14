@@ -1,0 +1,12 @@
+.advantages {
+    background-color: var(--background-color-secondary);
+}
+
+.advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.advantages__img {
+    width: 50px;
+}

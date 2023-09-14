@@ -2,8 +2,16 @@
     background-color: var(--);
 }
 
+.page-header__logo-img {
+    width: 153px;
+}
+
 .page-header__information {
     display: block;
+}
+
+.offer__phone-img svg {
+    width: 24px;
 }
 
 @media (min-width: 992px) {

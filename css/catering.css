@@ -1,0 +1,14 @@
+.catering {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.catering__item-img {
+    width: 50px;
+}
+
+@media (min-width: 768px) {.catering {
+    grid-template-columns: repeat(2, 1fr);
+}
+    
+}
