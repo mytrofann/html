@@ -38,6 +38,7 @@
     --link-special-color: rgb(166, 58, 24);
 
     --btn-text-color: #fff;
+    --button-size-mobile: 16px;
     --btn-background-accent-color: rgb(255, 93, 40);
     --btn-download-background-color: rgb(255, 244, 241);
     --btn-gift-text-color: #4b566a;
@@ -53,12 +54,15 @@ img {
 }
 
 button {
+    padding: 12px 26px;
     display: inline-block;
     position: relative;
     max-width: 100%;
+    border-width: 2px;
     border-radius: 7px 25px 25px 25px;
     color: var(--btn-text-color);
     background-color: var(--btn-background-accent-color);
+    vertical-align: middle;
 }
 
 li {
