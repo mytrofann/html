@@ -7,6 +7,40 @@
     width: 50px;
 }
 
+.catering__information-wrapper {
+    padding-top: 90px;
+    padding-bottom: 75px;
+}
+
+.catering__title {
+    color: var(--text-accent-color);
+    font-size: var(--text-name-size-mobile);
+    text-transform: uppercase;
+}
+
+.catering__offer {
+    margin-top: 20px;
+    font-size: var(--text-offer-size-catering);
+}
+
+.catering__subtitle {
+    color: var(--text-dark-accent-color);
+    font-size: var(--ui-subtitle-size-mobile);
+}
+
+.catering__text {
+    font-size: var(--text-size-mobile);
+}
+
+.catering__item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+}
+
+.catering__item-img {
+    justify-content: baseline;
+}
+
 @media (min-width: 768px) {.catering {
     grid-template-columns: repeat(2, 1fr);
 }

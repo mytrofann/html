@@ -11,17 +11,26 @@
     --background-color-photo: #4b566a;
 
     --text-color: rgb(155, 158, 164);
+    --text-size-mobile: 17px;
     --text-size: 17px;
-    --text-title-color: rgb(75, 86, 106);
+
+    --text-title-color-dark: rgb(75, 86, 106);
+    --text-title-color-light: #fff;
+    --text-title-size-mobile: 11px;
     --text-subtitle-color: rgb(130, 134, 143);
+    --text-subtitle-size: 19px;
     --text-accent-color: rgb(255, 93, 40);
+    --text-dark-accent-color: #82868f;
     --text-accent-title-size: 17px;
     --text-accent-title-weight: 400;
     --text-accent-title-font: Roboto, sans-serif;
+    --text-offer-size-catering: 38px;
     --text-title-size: 54px;
     --text-title-weight: 400;
     --text-title-font: Volcorn, sans-serif;
     --text-transform: uppercase;
+
+    --ui-subtitle-size-mobile: 19px;
 
     --link-color: rgb(130, 134, 143);
     --link-primary-hover-color: rgb(155, 158, 164);

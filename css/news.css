@@ -2,8 +2,13 @@
     background-color: var(--background-color-primary);
 }
 
-.news__nane {
+.news__wrapper {
+    padding: 0 12px;
+}
+
+.news__title {
     color: var(--text-accent-color);
+    font-size: var(--text-size-mobile);
     font-weight: var(--text-accent-title-weight);
     font-family: var(--text-accent-title-font);
     text-transform: var(--text-transform);
@@ -18,8 +23,16 @@
     width: 297px;
 }
 
+.news__list-item:not(:first-child) {
+    margin-top: 50px;
+}
+
 .list-content__description {
     font-size: var(--text-size);
+}
+
+list-content__button {
+    margin-top: 50px;
 }
 
 @media (min-width: 768px) {

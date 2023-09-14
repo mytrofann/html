@@ -1,12 +1,29 @@
 .advantages {
+    padding-top: 80px;
+    padding-bottom: 15px;
     background-color: var(--background-color-secondary);
 }
 
 .advantages__list {
+    padding: 0 12px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .advantages__img {
     width: 50px;
+}
+
+.advantages__item {
+    display: grid;
+    grid-template-columns: 80px repeat(1, 1fr);
+    grid-template-rows: auto auto;
+}
+
+.advantages__item:not(:first-child) {
+    margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+    
 }
