@@ -1,0 +1,72 @@
+.page-footer {
+    background-color: var(--background-color-secondary);
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.page-footer__wrapper {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.page-footer__logo-img {
+    width: 153px;
+    text-align: center;
+}
+
+.footer__text {
+    margin-top: 30px;
+}
+
+.service {
+    margin-top: 30px;
+}
+
+.service__link {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.social {
+    margin-top: 30px;
+}
+
+.social__link svg {
+    width: 20px;
+}
+
+.main-nav {
+    margin-top: 20px;
+}
+
+.sitelist__item-link {
+    text-decoration: none;
+}
+
+.links {
+    margin-top: 50px;
+}
+
+.links__item-link {
+    text-decoration: none;
+}
+
+.contacts {
+    margin-top: 50px;
+}
+
+.contacts__item-img svg {
+    width: 18px;
+}
+
+.caption {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.caption__item:not(:first-child) {
+    margin-top: 20px;
+}
