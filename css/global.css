@@ -38,6 +38,13 @@
     --text-text-color-dark: rgb(75, 86, 106);
     --text-text-size: 19px;
     --text-text-font: Roboto, sans-serif;
+    --text-catering-font-family: "Vollkorn, sans-serif";
+    --text-catering-font-weight: 400;
+    --text-catering-font-size: 22px;
+    --text-offer-font-family: "Vollkorn, sans-serif";
+
+    --text-item-text-font-size: 17px;
+    --text-item-text-color: rgb(155, 158, 164);
 
     --text-transform: uppercase;
 
@@ -62,6 +69,7 @@
 
 body {
     font-family: Roboto, sans-serif;
+    font-weight: 400;
 }
 
 img {
