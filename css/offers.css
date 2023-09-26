@@ -1,10 +1,114 @@
 .offers {
-    display: grid;
-    grid-template-columns: 1fr;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 95px;
+    padding-bottom: 100px;
+    background-image: url("../img/offers-image.svg");
+    background-repeat: no-repeat;
+    background-position: 57.5%, 43.37%;
+    background-color: var(--background-color-secondary);
 }
 
-@media (min-width: 768px) {.offers {
-    grid-template-columns: repeat(2, 1fr);
+.offers__information-wrapper {
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
+.offers__title {
+    font-size: var(--text-title-size-mobile);
+    font-family: var(--text-accent-title-font);
+    color: var(--text-accent-color);
+    text-transform: var(--text-transform);
+}
+
+.offers__description {
+    margin-top: 20px;
+    font-size: var(--text-description-size);
+    font-weight: var(--text-description-weight);
+    font-family: var(--text-description-font);
+    color: var(--text-description-color-dark);
+}
+
+.offers__text {
+    margin-top: 15px;
+    color: var(--text-text-color-dark);
+    font-size: var(--text-text-size);
+    font-family: var(--text-text-font);
+}
+
+.offers__list {
+    margin-top: 45px;
+}
+
+.offers__dinner-img {
+    display: block;
+    width: 100%;
+    height: 229px;
+    background-image: url("../img/dinner.jpeg");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-position: 54.06% 84.15%;
+    background-origin: padding-box;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.offers__dessert-img {
+    display: block;
+    width: 100%;
+    height: 229px;
+    background-image: url("../img/dessert.jpeg");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-position: 54.06% 84.15%;
+    background-origin: padding-box;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.offers__cocktails-img {
+    display: block;
+    width: 100%;
+    height: 229px;
+    background-image: url("../img/cocktails.jpeg");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-position: 54.06% 84.15%;
+    background-origin: padding-box;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.offers__text-wrapper {
+    padding: 35px;
+    text-align: start;
+}
+
+.offers__item-name {
+    margin-top: 20px;
+    font-size: 22px;
+    font-family: ;
+}
+
+.offers__item-text {
+    padding-top: 20px;
+    color: rgb(130, 134, 143);
+}
+
+@media (min-width: 768px) {
+    .offers__item {
+        display: grid;
+        grid-template: repeat(2, 1fr);
+    }
+    
+}
+
+@media (min-width: 992px) {
+    .offers__list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
     
 }

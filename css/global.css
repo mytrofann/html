@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;700&family=Vollkorn&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +19,7 @@
     --text-title-color-dark: rgb(75, 86, 106);
     --text-title-color-light: #fff;
     --text-title-size-mobile: 11px;
+    --text-title-weight-mobile: 900;
     --text-subtitle-color: rgb(130, 134, 143);
     --text-subtitle-size: 19px;
     --text-accent-color: rgb(255, 93, 40);
@@ -25,9 +28,17 @@
     --text-accent-title-weight: 400;
     --text-accent-title-font: Roboto, sans-serif;
     --text-offer-size-catering: 38px;
-    --text-title-size: 54px;
+    --text-description-size: 34px;
+    --text-description-color-light: #fff;
     --text-title-weight: 400;
-    --text-title-font: Volcorn, sans-serif;
+    --text-description-color-dark: rgb(75, 86, 106);
+    --text-description-weight: 400;
+    --text-description-font: "Vollkorn, sans-serif";
+    --text-text-color: rgba(255, 255, 255, 0.81);
+    --text-text-color-dark: rgb(75, 86, 106);
+    --text-text-size: 19px;
+    --text-text-font: Roboto, sans-serif;
+
     --text-transform: uppercase;
 
     --ui-subtitle-size-mobile: 19px;
@@ -45,7 +56,12 @@
     --btn-gift-background-color: rgb(250, 251, 251);
 
     --icon-color: rgb(255, 93, 40);
+    min-width: 320px;
 
+}
+
+body {
+    font-family: Roboto, sans-serif;
 }
 
 img {
@@ -54,18 +70,29 @@ img {
 }
 
 button {
+    margin: 20px;
     padding: 12px 26px;
     display: inline-block;
     position: relative;
     max-width: 100%;
+    font-size: 16px;
+    font-weight: 600;
     border-width: 2px;
     border-radius: 7px 25px 25px 25px;
+    border-color: #ff5d28;
     color: var(--btn-text-color);
     background-color: var(--btn-background-accent-color);
     vertical-align: middle;
+    cursor: pointer;
 }
 
 li {
     padding: 0;
     list-style-type: none;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1200px;
 }
