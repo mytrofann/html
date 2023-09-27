@@ -1,59 +1,58 @@
 const photos = [
     {
         id: 1,
-        name: 'Granny Smith Apples',
         imageUrl: 'img/salad.jpeg',
-        alt: 'Salad',
+        alt: 'Salad'
     },
     {
         id: 2,
         imageUrl: 'img/serving-tartare.jpeg',
-        alt: 'Serving tartare',
+        alt: 'Serving tartare'
     },
     {
         id: 3,
         imageUrl: 'img/steak-with-vegetables.jpeg',
-        alt: 'Steak with vegetables',
+        alt: 'Steak with vegetables'
     },
     {
         id: 4,
         imageUrl: 'img/tom-yum.jpeg',
-        alt: 'Tom yum',
+        alt: 'Tom yum'
     },
     {
         id: 5,
         imageUrl: 'img/people-drink-wine.jpeg',
-        alt: 'People drink wine',
+        alt: 'People drink wine'
     },
     {
         id: 6,
         imageUrl: 'img/rolls.jpeg',
-        alt: 'Rolls',
+        alt: 'Rolls'
     },
     {
         id: 7,
         imageUrl: 'img/steak-serving.jpeg',
-        alt: 'Steak serving',
+        alt: 'Steak serving'
     },
     {
         id: 8,
         imageUrl: 'img/glass.jpeg',
-        alt: 'Glass',
+        alt: 'Glass'
     }
 ];
 
 let currentIndex = 0;
 
 function renderPhotos(startIndex) {
-    // Wrap the product list so that the first and last products are adjacent
+    // Wrap the photo list so that the first and last photos are adjacent
     const wrappedPhotos = [...photos, ...photos.slice(0, startIndex)];
 
     let photosHtml = '';
-    for (let i = startIndex; i < startIndex + 5; i++) {
+    for (let i = startIndex; i < startIndex + 8; i++) {
         const photo = wrappedPhotos[i];
         photosHtml += `
         <li class="photo-slider__item">
-                <img class="photo-slider__img" src="${photos.name}" alt="${photos.name}">
+                <img class="photo-slider__img" src="${photo.imageUrl}" alt="${photo.alt}">
             </li>`;
     }
     document.querySelector('.photo-slider__list').innerHTML = photosHtml;
@@ -76,5 +75,5 @@ document.querySelector('.photo-slider__button-next').addEventListener('click', (
     scrollPhotos('next');
 });
 
-// Render the initial set of products
+// Render the initial set of photos
 renderPhotos(currentIndex);
