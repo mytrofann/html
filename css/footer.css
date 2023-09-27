@@ -8,11 +8,12 @@
 .page-footer__wrapper {
     padding-top: 30px;
     padding-bottom: 60px;
+    border-top: 1px rgb(75, 86, 106) solid;
 }
 
 .page-footer__logo-img {
     width: 153px;
-    text-align: center;
+    margin: 0 auto;
 }
 
 .footer__text {
@@ -69,4 +70,69 @@
 
 .caption__item:not(:first-child) {
     margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .page-footer__wrapper {
+        display: flex;
+        flex-direction: row;
+        text-align: start;
+    }
+
+    .page-footer__information {
+        margin-top: 0;
+        flex-basis: 41.66667%;
+        max-width: 41.66667%;
+    }
+
+    .service__list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .service__title {
+        margin: 5px 8px;
+        margin-left: 0;
+    }
+
+    .social__title {
+        display: none;
+    }
+
+    .social__list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main-nav {
+        margin: 0;
+        flex-basis: 16.66667%;
+        max-width: 16.66667%;
+    }
+
+    .sitelist__item-link {
+        margin: 10px 5px;
+    }
+
+    .links {
+        margin-top: 0;
+        flex-basis: 16.66667%;
+        max-width: 16.66667%;
+    }
+
+    .contacts {
+        margin-top: 0;
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+
+    .caption {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .caption__item:not(:first-child) {
+        margin-top: 0;
+    }
+
 }

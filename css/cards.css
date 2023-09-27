@@ -41,7 +41,6 @@
     margin-left: 0;
     color: var(--btn-gift-text-color);
     background-color: var(--btn-text-color);
-    border-color: transparent;
 }
 
 .cards__button:hover {
@@ -114,8 +113,8 @@
     left: 25px;
     border: none;
     border-radius: 50%;
-    background-color: #ffffff;
-    color: #ffffff;
+    background-color: rgba(255, 255, 255, .9);
+    color: rgba(255, 255, 255, .9);
     top: 50%;
     z-index: 1;
 }
@@ -138,8 +137,8 @@
     right: 25px;
     border: none;
     border-radius: 50%;
-    background-color: #ffffff;
-    color: #ffffff;
+    background-color: rgba(255, 255, 255, .9);
+    color: rgba(255, 255, 255, .9);
     top: 50%;
     z-index: 1;
 }
@@ -151,6 +150,9 @@
     width: 20px;
     height: 20px;
     fill: #4b566a;
+}
+.photo-slider__button:hover {
+    background-color: #ffffff;
 }
 
 .photo-slider__list {
