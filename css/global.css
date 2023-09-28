@@ -38,10 +38,25 @@
     --text-text-color-dark: rgb(75, 86, 106);
     --text-text-size: 19px;
     --text-text-font: Roboto, sans-serif;
+
+    --text-advantages-font-size: 26px;
+    --text-advantages-font-family: "Vollkorn, sans-serif";
+    --text-advantages-font-weight: 400;
+    --text-advantages-color-dark: rgb(75, 86, 106);
+
+    --text-description-font-size: 17px;
+    --text-description-color-dark: rgb(155, 158, 164);
+
     --text-catering-font-family: "Vollkorn, sans-serif";
     --text-catering-font-weight: 400;
     --text-catering-font-size: 22px;
     --text-offer-font-family: "Vollkorn, sans-serif";
+
+    --text-footer-title-font-size: 26px;
+    --text-footer-title-font-family: "Vollkorn, sans-serif";
+    --text-footer-title-font-weight: 400;
+    --text-footer-title-color-dark: rgb(75, 86, 106);
+    --text-footer-link-color-hover: rgb(75, 86, 106);
 
     --text-item-text-font-size: 17px;
     --text-item-text-color: rgb(155, 158, 164);
@@ -52,6 +67,7 @@
 
     --link-color: rgb(130, 134, 143);
     --link-primary-hover-color: rgb(155, 158, 164);
+    --icon-accent-color: #ff5d28;
     --link-accent-hover-color: #ff5d28;
     --link-special-color: rgb(166, 58, 24);
 

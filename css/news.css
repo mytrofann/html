@@ -2,6 +2,9 @@
     padding-top: 30px;
     padding-bottom: 100px;
     background-color: var(--background-color-primary);
+    background-image: url(../img/bg-news.png);
+    background-repeat: no-repeat;
+    background-position: 49% 0% / cover;
 }
 
 .news__wrapper {
