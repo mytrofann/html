@@ -29,12 +29,15 @@
     --text-accent-title-font: Roboto, sans-serif;
     --text-offer-size-catering: 38px;
     --text-description-size: 34px;
+    --text-description-size-large: 54px;
     --text-description-color-light: #fff;
     --text-title-weight: 400;
     --text-description-color-dark: rgb(75, 86, 106);
     --text-description-weight: 400;
     --text-description-font: "Vollkorn, sans-serif";
     --text-text-color: rgba(255, 255, 255, 0.81);
+    --text-text-color-bold: rgb(130, 134, 143);
+    --text-text-color-lite-dark: rgb(155, 158, 164);
     --text-text-color-dark: rgb(75, 86, 106);
     --text-text-size: 19px;
     --text-text-font: Roboto, sans-serif;

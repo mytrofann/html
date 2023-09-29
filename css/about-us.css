@@ -1,0 +1,54 @@
+.about-us {
+    background-image: url("../img/g-main-about.png");
+    background-repeat: no-repeat;
+    background-position: 30% 70% / cover;
+}
+
+.about-us__wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    vertical-align: baseline;
+}
+
+.about-us__text-wrapper {
+    padding: 0 15px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us__title {
+    color: var(--text-accent-color);
+    font-size: var(--text-title-size-mobile);
+    font-weight: var(--text-title-weight-mobile);
+    font-family: var(--text-accent-title-font);
+    text-transform: var(--text-transform);
+}
+
+.about-us__description {
+    font-size: var(--text-description-size);
+    font-family: var(--text-description-font);
+}
+
+.about-us__text {
+    color: var(--text-text-color-lite-dark);
+    font-size: var(--text-description-font-size);
+}
+
+.about-us__text-bold {
+    color: var(--text-text-color-lite-dark);
+    font-size: var(--text-text-size);
+}
+
+.about-us__button {
+    width: 165px;
+    height: 53px;
+}
+
+@media (min-width: 768px) {
+    .about-us__wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}

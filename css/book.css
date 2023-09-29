@@ -1,4 +1,4 @@
-.booking {
+.book {
     margin: 0;
     padding: 0;
     padding-top: 70px;
@@ -9,7 +9,7 @@
     background-attachment: fixed;
 }
 
-.booking-wrapper {
+.book-wrapper {
     margin: 0 15px;
     margin-top: 50px;
     display: flex;
@@ -18,7 +18,7 @@
 
 }
 
-.booking__title {
+.book__title {
     color: var(--text-accent-color);
     font-size: var(--text-title-size-mobile);
     font-weight: var(--text-title-weight-mobile);
@@ -26,15 +26,15 @@
     text-transform: var(--text-transform);
 }
 
-.booking__description {
+.book__description {
     margin-top: 20px;
-    font-size: var(--text-description-size);
+    font-size: var(--text-description-size-large);
     font-weight: var(--text-title-weight);
     font-family: var(--text-title-font);
     color: var(--text-description-color-light);
 }
 
-.booking__text {
+.book__text {
     display: inline-block;
     margin: 0;
     margin-top: 35px;
@@ -43,13 +43,13 @@
     font-family: var(--text-text-font);
 }
 
-.booking__button-wrapper {
+.book__button-wrapper {
     margin-top: 35px;
 }
 
 @media (min-width: 768px) {
 
-    .booking-wrapper {
+    .book-wrapper {
         margin: 0 auto;
         margin-top: 50px;
         max-width: 66.66667%;
