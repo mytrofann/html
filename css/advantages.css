@@ -1,7 +1,7 @@
 .advantages {
     padding-top: 80px;
     padding-bottom: 65px;
-    background-color: var(--background-color-secondary);
+    background-color: var(--advantages-background-color);
 }
 
 .advantages__list {
@@ -10,33 +10,35 @@
     grid-template-columns: 1fr;
 }
 
-.advantages__img {
-    margin: 8px;
-    width: 50px;
-}
-
 .advantages__item {
     margin: 15px;
     display: flex;
     align-items: start;
 }
 
-.advance__content {
+.advantages__item-img {
+    margin: 8px;
+    width: 50px;
+}
+
+.advantages__item-content {
     margin: 8px;
 }
 
-.advantages__title {
-    font-size: var(--text-advantages-font-size);
-    font-family: var(--text-advantages-font-family);
-    font-weight: var(--text-advantages-font-weight);
-    line-height: 39px;
-    color: var(--text-advantages-color-dark);
+.advantages__item-title {
+    color: var(--catering-list-title-color);
+    font-size: var(--advantages-list-title-font-size-mobile);
+    font-family: var(--advantages-list-title-font-family);
+    font-weight: var(--advantages-list-title-font-weight);
+    line-height: var(--advantages-list-title-line-height-mobile);
 }
 
-.advantages__description {
-    font-size: var(--text-description-font-size);
-    color: var(--text-description-color-dark);
-    line-height: 24.48px;
+.advantages__item-text {
+    color: var(--advantages-list-text-color);
+    font-family: var(--advantages-list-text-font-family);
+    font-size: var(--advantages-list-text-font-size);
+    font-weight: var(--advantages-list-text-font-weight);
+    line-height: var(--advantages-list-text-line-height);
 }
 
 .advantages__item:not(:first-child) {
@@ -61,6 +63,11 @@
         justify-self: center;
         width: 40%;
     }
+
+    .advantages__item-title {
+        font-size: var(--advantages-list-title-font-size-tablet);
+        line-height: var(--advantages-list-title-line-height-tablet);
+    }
 }
 
 @media (min-width: 992px) {
@@ -78,8 +85,13 @@
         justify-self: normal;
     }
 
-    .advantages__img {
+    .advantages__item-img {
         width: 70px;
+    }
+
+    .advantages__item-title {
+        font-size: var(--advantages-list-title-font-size);
+        line-height: var(--advantages-list-title-line-height);
     }
 
 }

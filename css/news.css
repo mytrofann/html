@@ -12,11 +12,21 @@
 }
 
 .news__title {
-    color: var(--text-accent-color);
-    font-size: var(--text-size-mobile);
-    font-weight: var(--text-accent-title-weight);
-    font-family: var(--text-accent-title-font);
+    color: var(--text-color-accent);
+    font-size: var(--text-title-font-size);
+    font-weight: var(--text-title-font-weight);
+    font-family: var(--text-title-font-family);
     text-transform: var(--text-transform);
+}
+
+.news__title::after {
+    content: " -";
+    color: var(--text-color-accent);
+}
+
+.news__title::before {
+    content: "- ";
+    color: var(--text-color-accent);
 }
 
 .news__list {

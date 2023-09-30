@@ -1,3 +1,3 @@
 document.addEventListener('partialsLoaded', () => {
-    import("./photo-slider.js")
+    import("./carousel.js")
 });

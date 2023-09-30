@@ -15,32 +15,43 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-
 }
 
 .book__title {
-    color: var(--text-accent-color);
-    font-size: var(--text-title-size-mobile);
-    font-weight: var(--text-title-weight-mobile);
-    font-family: var(--text-accent-title-font);
-    text-transform: var(--text-transform);
+    color: var(--book-brend-color);
+    font-size: var(--book-h2-title-font-size);
+    font-weight: var(--book-h2-title-font-weight);
+    font-family: var(--book-h2-title-font-family);
+    text-transform: var(--book-text-transform);
 }
 
-.book__description {
-    margin-top: 20px;
-    font-size: var(--text-description-size-large);
-    font-weight: var(--text-title-weight);
-    font-family: var(--text-title-font);
-    color: var(--text-description-color-light);
+.book__title::after {
+    content: " -";
+    color: var(--text-color-accent);
 }
 
-.book__text {
+.book__title::before {
+    content: "- ";
+    color: var(--text-color-accent);
+}
+
+.book__subtitle {
+    color: var(--book-subtitle-color);
+    font-family: var(--cards-secondary-font-family);
+    font-size: var(--book-subtitle-font-size-mobile);
+    font-weight: var(--book-subtitle-font-weight);
+    line-height: var(--book-subtitle-line-height-mobile);
+}
+
+.book__text-bold {
     display: inline-block;
     margin: 0;
     margin-top: 35px;
-    color: rgba(255, 255, 255, 0.81);
-    font-size: var(--text-text-size);
-    font-family: var(--text-text-font);
+    color: var(--book-paragraph-accent-color);
+    font-family: var(--book-paragraph-accent-font-family);
+    font-size: var(--book-paragraph-accent-font-size);
+    font-weight: var(--book-paragraph-accent-font-weight);
+    line-height: var(--book-paragraph-accent-line-height);
 }
 
 .book__button-wrapper {
@@ -54,6 +65,20 @@
         margin-top: 50px;
         max-width: 66.66667%;
 
+    }
+
+    .book__subtitle {
+        font-size: var(--book-subtitle-font-size-tablet);
+        line-height: var(--book-subtitle-line-height-tablet);
+    }
+
+}
+
+@media (min-width: 991px) {
+
+    .book__subtitle {
+        font-size: var(--book-subtitle-font-size);
+        line-height: var(--book-subtitle-line-height);
     }
 
 }

@@ -51,11 +51,11 @@ function renderPhotos(startIndex) {
     for (let i = startIndex; i < startIndex + 8; i++) {
         const photo = wrappedPhotos[i];
         photosHtml += `
-        <li class="photo-slider__item">
-                <img class="photo-slider__img" src="${photo.imageUrl}" alt="${photo.alt}">
+        <li class="carousel__item">
+                <img class="carousel__img" src="${photo.imageUrl}" alt="${photo.alt}">
             </li>`;
     }
-    document.querySelector('.photo-slider__list').innerHTML = photosHtml;
+    document.querySelector('.carousel__list').innerHTML = photosHtml;
 }
 
 function scrollPhotos(direction) {
@@ -67,11 +67,11 @@ function scrollPhotos(direction) {
     renderPhotos(currentIndex);
 }
 
-document.querySelector('.photo-slider__button-prev').addEventListener('click', () => {
+document.querySelector('.carousel__button-prev').addEventListener('click', () => {
     scrollPhotos('prev');
 });
 
-document.querySelector('.photo-slider__button-next').addEventListener('click', () => {
+document.querySelector('.carousel__button-next').addEventListener('click', () => {
     scrollPhotos('next');
 });
 

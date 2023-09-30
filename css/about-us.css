@@ -1,7 +1,11 @@
-.about-us {
-    background-image: url("../img/g-main-about.png");
-    background-repeat: no-repeat;
-    background-position: 30% 70% / cover;
+.about-us__img-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.about-us__img {
+    max-width: 555px;
+    height: auto;
 }
 
 .about-us__wrapper {
@@ -20,35 +24,95 @@
 }
 
 .about-us__title {
-    color: var(--text-accent-color);
-    font-size: var(--text-title-size-mobile);
-    font-weight: var(--text-title-weight-mobile);
-    font-family: var(--text-accent-title-font);
-    text-transform: var(--text-transform);
+    color: var(--catering-brend-color);
+    font-size: var(--about-us-h2-title-font-size);
+    font-weight: var(--about-us-h2-title-font-weight);
+    font-family: var(--about-us-primary-font-family);
+    text-transform: var(--about-us-text-transform);
 }
 
-.about-us__description {
-    font-size: var(--text-description-size);
-    font-family: var(--text-description-font);
+.about-us__title::after {
+    content: " -";
+    color: var(--text-color-accent);
+}
+
+.about-us__title::before {
+    content: "- ";
+    color: var(--text-color-accent);
+}
+
+.about-us__subtitle {
+    margin-top: var(--about-us-subtitle-margin-top);
+    color: var(--about-us-subtitle-color);
+    font-size: var(--about-us-subtitle-font-size-mobile);
+    font-family: var(--about-us-secondary-font-family);
+    font-weight: var(--about-us-subtitle-line-height-mobile);
 }
 
 .about-us__text {
-    color: var(--text-text-color-lite-dark);
-    font-size: var(--text-description-font-size);
+    color: var(--about-us-text-color);
+    font-family: var(--about-us-primary-font-family);
+    font-size: var(--about-us-paragraph-font-size);
+    font-weight: var(--about-us-paragraph-font-weight);
+    line-height: var(--about-us-paragraph-line-height);
+}
+
+.about-us__text-padding {
+    margin-top: 20px;
 }
 
 .about-us__text-bold {
-    color: var(--text-text-color-lite-dark);
-    font-size: var(--text-text-size);
+    margin-top: 15px;
+    color: var(--about-us-paragraph-accent-color);
+    font-size: var(--about-us-paragraph-accent-font-size);
+    font-weight: var(--about-us-paragraph-accent-font-weight);
+    line-height: var(--about-us-paragraph-accent-line-height);
 }
 
 .about-us__button {
+    margin-left: 0;
     width: 165px;
     height: 53px;
 }
 
 @media (min-width: 768px) {
+    .about-us {
+        background-image: url("../img/g-main-about.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center right 45%;
+    }
+
+    .about-us__img {
+        max-width: 455px;
+    }
+
     .about-us__wrapper {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .about-us__subtitle {
+        font-size: var(--about-us-subtitle-font-size-tablet);
+        font-weight: var(--about-us-subtitle-line-height-tablet);
+    }
+
+    .about-us__text {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .about-us__text-padding {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .about-us {
+        background-position: center left;
+    }
+
+    .about-us__subtitle {
+        font-size: var(--about-us-subtitle-font-size);
+        font-weight: var(--about-us-subtitle-line-height);
     }
 }

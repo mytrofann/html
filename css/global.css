@@ -6,89 +6,220 @@
     box-sizing: border-box;
 }
 
-:root{
-    --background-color-primary: rgb(255, 255, 255);
-    --background-color-secondary: #f7f6f2;
-    --background-color-accent: rgb(255, 93, 40);
-    --background-color-photo: #4b566a;
+:root {
+    /* About-us start */
+    --about-us-h2-title-font-size: 11px;
+    --about-us-h2-title-font-weight: 900;
+    --about-us-subtitle-margin-top: 20px;
+    --about-us-subtitle-color: rgb(75, 86, 106);
+    --about-us-subtitle-font-size-mobile: 34px;
+    --about-us-subtitle-font-size-tablet: 38px;
+    --about-us-subtitle-font-size: 42px;
+    --about-us-subtitle-line-height-mobile: 40.8px;
+    --about-us-subtitle-line-height-tablet: 45.6px;
+    --about-us-subtitle-line-height: 50.4px;
+    --about-us-text-color: rgb(155, 158, 164);
+    --about-us-paragraph-font-size: 17px;
+    --about-us-paragraph-font-weight: 400;
+    --about-us-paragraph-line-height: 24.48px;
+    --about-us-paragraph-accent-color: rgb(130, 134, 143);
+    --about-us-paragraph-accent-font-size: 19px;
+    --about-us-paragraph-accent-font-weight: 500;
+    --about-us-paragraph-accent-line-height: 26.6px;
+    --about-us-primary-font-family: Roboto, sans-serif;
+    --about-us-text-transform: uppercase;
+    /* About-us end */
+    /* Book start */
+    --book-brend-color: rgb(255, 93, 40);
+    --book-h2-title-font-size: 11px;
+    --book-h2-title-font-weight: 900;
+    --book-h2-title-font-family: Roboto, sans-serif;
+    --book-subtitle-color: rgb(255, 255, 255);
+    --book-subtitle-font-size-mobile: 54px;
+    --book-subtitle-font-size-tablet: 57px;
+    --book-subtitle-font-size: 60px;
+    --book-subtitle-font-weight: 400;
+    --book-subtitle-line-height-mobile: 59.4px;
+    --book-subtitle-line-height-tablet: 62.7px;
+    --book-subtitle-line-height: 66px;
+    --book-paragraph-accent-color: rgba(255, 255, 255, 0.81);
+    --book-paragraph-accent-font-size: 19px;
+    --book-paragraph-accent-font-weight: 500;
+    --book-paragraph-accent-line-height: 26.6px;
+    --book-paragraph-accent-font-family: Roboto, sans-serif;
+    --book-text-transform: uppercase;
+    /* Book start */
+    /* Offers start */
 
-    --text-color: rgb(155, 158, 164);
-    --text-size-mobile: 17px;
-    --text-size: 17px;
+    --offers-h2-title-font-size: 11px;
+    --offers-h2-title-font-weight: 900;
+    --offers-subtitle-margin-top: 20px;
+    --offers-subtitle-color: rgb(75, 86, 106);
+    --offers-subtitle-font-size-mobile: 34px;
+    --offers-subtitle-font-size-tablet: 38px;
+    --offers-subtitle-font-size: 42px;
+    --offers-subtitle-line-height-mobile: 40.8px;
+    --offers-subtitle-line-height-tablet: 45.6px;
+    --offers-subtitle-line-height: 50.4px;
+    --offers-paragraph-accent-color: rgb(130, 134, 143);
+    --offers-paragraph-accent-font-size: 19px;
+    --offers-paragraph-accent-font-weight: 500;
+    --offers-paragraph-accent-line-height: 26.6px;
+    --offers-list-title-color: rgb(75, 86, 106);
+    --offers-list-title-font-size-mobile: 22px;
+    --offers-list-title-font-size-tablet: 24px;
+    --offers-list-title-font-size: 26px;
+    --offers-list-title-font-weight: 400;
+    --offers-list-title-line-height-mobile: 28.6px;
+    --offers-list-title-line-height-tablet: 31.2px;
+    --offers-list-title-line-height: 33.8px;
 
-    --text-title-color-dark: rgb(75, 86, 106);
-    --text-title-color-light: #fff;
-    --text-title-size-mobile: 11px;
-    --text-title-weight-mobile: 900;
-    --text-subtitle-color: rgb(130, 134, 143);
-    --text-subtitle-size: 19px;
-    --text-accent-color: rgb(255, 93, 40);
-    --text-dark-accent-color: #82868f;
-    --text-accent-title-size: 17px;
-    --text-accent-title-weight: 400;
-    --text-accent-title-font: Roboto, sans-serif;
-    --text-offer-size-catering: 38px;
-    --text-description-size: 34px;
-    --text-description-size-large: 54px;
-    --text-description-color-light: #fff;
-    --text-title-weight: 400;
-    --text-description-color-dark: rgb(75, 86, 106);
-    --text-description-weight: 400;
-    --text-description-font: "Vollkorn, sans-serif";
-    --text-text-color: rgba(255, 255, 255, 0.81);
-    --text-text-color-bold: rgb(130, 134, 143);
-    --text-text-color-lite-dark: rgb(155, 158, 164);
-    --text-text-color-dark: rgb(75, 86, 106);
-    --text-text-size: 19px;
-    --text-text-font: Roboto, sans-serif;
+    --offers-list-text-color: rgb(155, 158, 164);
+    --offers-list-text-font-size: 17px;
+    --offers-list-text-font-weight: 400;
+    --offers-list-text-line-height: 24.48px;
 
-    --text-advantages-font-size: 26px;
-    --text-advantages-font-family: "Vollkorn, sans-serif";
-    --text-advantages-font-weight: 400;
-    --text-advantages-color-dark: rgb(75, 86, 106);
+    --offers-secondary-font-family: "Vollkorn, sans-serif";
+    --offers-primary-font-family: Roboto, sans-serif;
+    --offers-text-transform: uppercase;
+    /* Offers end */
+    /* Catering start */
+    --catering-information-wrapper-padding-left-mobile: 15px;
+    --catering-information-wrapper-padding-right-mobile: 15px;
+    --catering-information-wrapper-padding-top-mobile: 90px;
+    --catering-information-wrapper-padding-bottom-mobile: 75px;
+    --catering-information-wrapper-padding-left-tablet: 30px;
+    --catering-information-wrapper-padding-right-tablet: 30px;
+    --catering-information-wrapper-padding-top-tablet: 105px;
+    --catering-information-wrapper-padding-bottom-tablet: 90px;
+    --catering-information-wrapper-padding-left: 10%;
+    --catering-information-wrapper-padding-right: 10%;
+    --catering-information-wrapper-padding-top: 120px;
+    --catering-display-mobile: grid;
+    --catering-grid-template-columns-mobile: 1fr;
+    --catering-grid-template-columns-tablet: repeat(2, 1fr);
+    --catering-image-height: 100%;
+    --catering-image-object-fit: cover;
+    --catering-image-object-position: 39.117% 0%;
+    --catering-brend-color: rgb(255, 93, 40);
+    --catering-text-color: rgb(155, 158, 164);
+    --catering-paragraph-font-size: 17px;
+    --catering-paragraph-font-weight: 400;
+    --catering-paragraph-line-height: 24.48px;
+    --catering-paragraph-accent-color: rgb(130, 134, 143);
+    --catering-paragraph-accent-font-size: 19px;
+    --catering-paragraph-accent-font-weight: 500;
+    --catering-paragraph-accent-line-height: 26.6px;
+    --catering-list-icon-width-mobile: 50px;
+    --catering-list-icon-width: 70px;
+    --catering-list-title-color: rgb(75, 86, 106);
+    --catering-list-title-font-size-mobile: 22px;
+    --catering-list-title-font-size-tablet: 24px;
+    --catering-list-title-font-size: 26px;
+    --catering-list-title-font-weight: 400;
+    --catering-list-title-line-height-mobile: 28.6px;
+    --catering-list-title-line-height-tablet: 31.2px;
+    --catering-list-title-line-height: 33.8px;
+    --catering-list-text-color: rgb(155, 158, 164);
+    --catering-list-text-font-size: 17px;
+    --catering-list-text-font-weight: 400;
+    --catering-list-text-line-height: 24.48px;
+    --catering-h2-title-font-size: 11px;
+    --catering-h2-title-font-weight: 900;
+    --catering-subtitle-margin-top: 20px;
+    --catering-subtitle-color: rgb(75, 86, 106);
+    --catering-subtitle-font-size-mobile: 34px;
+    --catering-subtitle-font-size-tablet: 38px;
+    --catering-subtitle-font-size: 42px;
+    --catering-subtitle-line-height-mobile: 40.8px;
+    --catering-subtitle-line-height-tablet: 45.6px;
+    --catering-subtitle-line-height: 50.4px;
+    --catering-primary-font-family: Roboto, sans-serif;
+    --catering-secondary-font-family: "Vollkorn, sans-serif";
+    --catering-text-transform: uppercase;
+    /* Catering end */
+    /* Advantages start */
+    --cards-h2-title-font-size: 11px;
+    --cards-h2-title-font-weight: 900;
+    --cards-h2-title-color: rgb(255, 255, 255);
+    --cards-button-color: rgb(75, 86, 106);
+    --cards-button-background-color: rgb(255, 255, 255);
+    --cards-button-color-hover: rgb(255, 255, 255);
+    --cards-button-background-color-hover: rgb(75, 86, 106);
+    --cards-subtitle-color: rgb(255, 255, 255);
+    --cards-subtitle-font-size-mobile: 34px;
+    --cards-subtitle-font-size-tablet: 38px;
+    --cards-subtitle-font-size: 42px;
+    --cards-subtitle-font-weight: 400;
+    --cards-subtitle-line-height-mobile: 40.8px;
+    --cards-subtitle-line-height-tablet: 45.6px;
+    --cards-subtitle-line-height: 50.4px;
+    --cards-paragraph-accent-color: rgba(255, 255, 255, 0.81);
+    --cards-paragraph-accent-font-size: 19px;
+    --cards-paragraph-accent-font-weight: 500;
+    --cards-paragraph-accent-line-height: 26.6px;
+    --cards-item-background-color: rgb(255, 255, 255);
+    --cards-item-box-shadow: -3px 3px 26px 5px rgba(130, 134, 143, .25);
+    --cards-item-link-color: rgb(255, 93, 40);
+    --cards-item-link-font-family: Roboto, sans-serif;
+    --cards-item-link-font-size: 11px;
+    --cards-item-link-font-weight: 900;
+    --cards-item-link-line-height: 15.73px;
+    --cards-list-title-color: rgb(75, 86, 106);
+    --cards-list-title-font-size-mobile: 28px;
+    --cards-list-title-font-size-tablet: 30px;
+    --cards-list-title-font-size: 32px;
+    --cards-list-title-font-weight: 400;
+    --cards-list-title-line-height-mobile: 31.64px;
+    --cards-list-title-line-height-tablet: 33.9px;
+    --cards-list-title-line-height: 36.16px;
+    --cards-list-text-color: rgb(155, 158, 164);
+    --cards-list-text-font-size: 17px;
+    --cards-list-text-font-weight: 400;
+    --cards-list-text-line-height: 24.48px;
+    --cards-list-caption-color: rgba(130, 134, 143, 0.63);
+    --cards-list-caption-font-size-mobile: 14px;
+    --cards-list-caption-font-size: 15px;
+    --cards-list-caption-font-style: italic;
+    --cards-list-caption-font-weight: 400;
+    --cards-list-caption-line-height-mobile: 19.32px;
+    --cards-list-caption-line-height: 20.7px;
+    --cards-list-caption-star-color: rgb(255, 93, 40);
+    --cards-primary-font-family: Roboto, sans-serif;
+    --cards-secondary-font-family: "Vollkorn, sans-serif";
+    --cards-text-transform: uppercase;
+    --cards-carousel-button-background-color: rgb(255, 255, 255);
+    --cards-carousel-background-color: rgb(55, 62, 74);
+    /* Cards end */
+    /* Advantages start */
+    --advantages-list-title-color: rgb(75, 86, 106);
+    --advantages-list-title-font-size-mobile: 22px;
+    --advantages-list-title-font-size-tablet: 24px;
+    --advantages-list-title-font-size: 26px;
+    --advantages-list-title-font-weight: 400;
+    --advantages-list-title-line-height-mobile: 28.6px;
+    --advantages-list-title-line-height-tablet: 31.2px;
+    --advantages-list-title-line-height: 33.8px;
+    --advantages-list-title-font-family: "Vollkorn, sans-serif";
+    --advantages-list-text-color: rgb(155, 158, 164);
+    --advantages-list-text-font-size: 17px;
+    --advantages-list-text-font-weight: 400;
+    --advantages-list-text-line-height: 24.48px;
+    --advantages-list-text-font-family: Roboto, sans-serif;
+    --advantages-background-color: #f7f6f2;
+    /* Advantages end */
 
-    --text-description-font-size: 17px;
-    --text-description-color-dark: rgb(155, 158, 164);
-
-    --text-catering-font-family: "Vollkorn, sans-serif";
-    --text-catering-font-weight: 400;
-    --text-catering-font-size: 22px;
-    --text-offer-font-family: "Vollkorn, sans-serif";
-
-    --text-footer-title-font-size: 26px;
-    --text-footer-title-font-family: "Vollkorn, sans-serif";
-    --text-footer-title-font-weight: 400;
-    --text-footer-title-color-dark: rgb(75, 86, 106);
-    --text-footer-link-color-hover: rgb(75, 86, 106);
-
-    --text-item-text-font-size: 17px;
-    --text-item-text-color: rgb(155, 158, 164);
-
-    --text-transform: uppercase;
-
-    --ui-subtitle-size-mobile: 19px;
-
-    --link-color: rgb(130, 134, 143);
-    --link-primary-hover-color: rgb(155, 158, 164);
-    --icon-accent-color: #ff5d28;
-    --link-accent-hover-color: #ff5d28;
-    --link-special-color: rgb(166, 58, 24);
-
-    --btn-text-color: #fff;
-    --button-size-mobile: 16px;
-    --btn-background-accent-color: rgb(255, 93, 40);
-    --btn-download-background-color: rgb(255, 244, 241);
-    --btn-gift-text-color: #4b566a;
-    --btn-gift-background-color: rgb(250, 251, 251);
-
-    --icon-color: rgb(255, 93, 40);
     min-width: 320px;
+    /* color */
+    --brend-color: rgb(255, 93, 40);
+    --primary-color: rgb(255, 255, 255);
+    --secondary-color: #f7f6f2;
+    --translucent-color: rgba(255, 255, 255, 0.81);
+    --text-color: rgb(155, 158, 164);
+    --accent-color: rgb(130, 134, 143);
+    --subtitle-color: rgb(75, 86, 106);
+    --special-color: rgb(166, 58, 24);
 
-}
-
-body {
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
 }
 
 img {
@@ -107,8 +238,8 @@ button {
     border-width: 2px;
     border-radius: 7px 25px 25px 25px;
     border-color: transparent;
-    color: var(--btn-text-color);
-    background-color: var(--btn-background-accent-color);
+    color: #fff;
+    background-color: rgb(255, 93, 40);
     vertical-align: middle;
     cursor: pointer;
 }

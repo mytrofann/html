@@ -2,10 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: var(--background-color-accent);
     background-image: url("../img/pattern-for-cards.png");
-    background-repeat: no-repeat;
-    background-position: 50%, 50%;
 }
 
 .cards-wrapper {
@@ -19,18 +16,42 @@
 }
 
 .cards__title {
-    font-size: var(--text-title-size-mobile);
+    color: var(--cards-h2-title-color);
+    font-family: var(--cards-primary-font-family);
+    font-size: var(--cards-h2-title-font-size);
+    font-weight: var(--cards-h2-title-font-weight);
+    text-transform: var(--cards-text-transform);
+}
+
+.cards__title::after {
+    content: " -";
     color: var(--text-title-color-light);
-    font-weight: var(--text-title-weight-mobile);
-    font-family: var(--text-accent-title-font);
+}
+
+.cards__title::before {
+    content: "- ";
+    color: var(--text-title-color-light);
 }
 
 .cards__subtitle {
     margin-top: 20px;
+    color: var(--cards-subtitle-color);
+    font-family: var(--cards-secondary-font-family);
+    font-size: var(--cards-subtitle-font-size-mobile);
+    font-weight: var(--cards-subtitle-font-weight);
+    line-height: var(--cards-subtitle-line-height-mobile);
 }
 
-.cards__description {
+.cards__text {
     margin-top: 24px;
+}
+
+.cards__text-bold {
+    color: var(--cards-paragraph-accent-color);
+    font-family: var(--cards-primary-font-family);
+    font-size: var(--cards-paragraph-accent-font-size);
+    font-weight: var(--cards-paragraph-accent-font-weight);
+    line-height: var(--cards-paragraph-accent-line-height);
 }
 
 .cards__button-wrapper {
@@ -39,13 +60,14 @@
 
 .cards__button {
     margin-left: 0;
-    color: var(--btn-gift-text-color);
-    background-color: var(--btn-text-color);
+    margin-bottom: 30px;
+    color: var(--cards-button-color);
+    background-color: var(--cards-button-background-color);
 }
 
 .cards__button:hover {
-    color: var(--btn-text-color);
-    background-color: var(--btn-gift-text-color);
+    color: var(--cards-button-color-hover);
+    background-color: var(--cards-button-background-color-hover);
     border-color: transparent;
 }
 
@@ -57,9 +79,13 @@
 .cards__item {
     margin: 0 15px;
     padding: 29px;
-    background-color: var(--background-color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: var(--cards-item-background-color);
     border-radius: 10px;
-    box-shadow: -3px 3px 26px 5px rgba(130, 134, 143, .25);
+    box-shadow: var(--cards-item-box-shadow);
 }
 
 .cards__item:last-child {
@@ -72,38 +98,59 @@
 
 .cards__item-title {
     margin-top: 20px;
+    color: var(--cards-list-title-color);
+    font-family: var(--cards-secondary-font-family);
+    font-size: var(--cards-list-title-font-size-mobile);
+    font-weight: var(--cards-list-title-font-weight);
+    line-height: var(--cards-list-title-line-height-mobile);
 }
 
-.cards__item-description {
+.cards__item-text {
     margin-top: 25px;
+    color: var(--cards-list-text-color);
+    font-family: var(--cards-secondary-font-family);
+    font-size: var(--cards-list-text-font-size);
+    font-weight: var(--cards-list-text-font-weight);
+    line-height: var(--cards-list-text-line-height);
+    text-align: center;
 }
 
 .cards__item-caption {
     display: block;
     margin-top: 20px;
+    color: var(--cards-list-caption-color);
+    font-family: var(--cards-primary-font-family);
+    font-size: var(--cards-list-caption-font-size-mobile);
+    font-weight: var(--cards-list-caption-font-weight);
+    line-height: var(--cards-list-caption-line-height-mobile);
+    font-style: var(--cards-list-caption-font-style);
+    text-align: center;
+}
+
+.cards__item-caption-star {
+    color: var(--cards-list-caption-star-color);
 }
 
 .cards__item-link {
     margin-top: 20px;
     padding: 12px 26px;
+    padding-left: 0;
     display: block;
-    color: var(--link-accent-hover-color);
-    text-transform: uppercase;
+    color: var(--cards-item-link-color);
+    font-family: var(--cards-item-link-font-family);
+    font-size: var(--cards-item-link-font-size);
+    font-weight: var(--cards-item-link-font-weight);
+    line-height: var(--cards-item-link-line-height);
+    text-transform: var(--cards-text-transform);
 }
 
-.cards__title {
-    color: var(--text-title-color-light);
-    text-transform: uppercase;
-    font-size: var(--text-title-size-mobile);
-}
-
-.photo-slider__list-wrapper {
+.carousel__wrapper {
     margin: 0;
     padding: 0;
     position: relative;
 }
 
-.photo-slider__button-prev {
+.carousel__button-prev {
     margin: 0;
     padding: 0;
     display: inline-block;
@@ -115,11 +162,11 @@
     border-radius: 50%;
     background-color: rgba(255, 255, 255, .9);
     color: rgba(255, 255, 255, .9);
-    top: 50%;
+    top: 45%;
     z-index: 1;
 }
 
-.photo-slider__button-prev-img {
+.carousel__button-prev-img {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -127,7 +174,7 @@
     transform: rotate(180deg);
 }
 
-.photo-slider__button-next {
+.carousel__button-next {
     margin: 0;
     padding: 0;
     display: inline-block;
@@ -139,11 +186,11 @@
     border-radius: 50%;
     background-color: rgba(255, 255, 255, .9);
     color: rgba(255, 255, 255, .9);
-    top: 50%;
+    top: 45%;
     z-index: 1;
 }
 
-.photo-slider__button-next-img {
+.carousel__button-next-img {
     top: 2px;
     display: inline-block;
     max-width: 100%;
@@ -151,59 +198,75 @@
     height: 20px;
     fill: #4b566a;
 }
-.photo-slider__button:hover {
-    background-color: #ffffff;
+
+.carousel__button:hover {
+    background-color: var(--cards-carousel-button-background-color);
 }
 
-.photo-slider__list {
+.carousel__list {
     margin: 0;
-    padding: 45px;
+    padding: 30px 40px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-
-    background-color: var(--background-color-photo);
+    background-color: var(--cards-carousel-background-color);
 }
 
-.photo-slider__item:nth-child(n+2) {
+.carousel__item:nth-child(n+2) {
     display: none;
 }
 
 @media (min-width: 480px) {
 
-    .photo-slider__list {
+    .carousel__list {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 30px;
     }
 
-    .photo-slider__item:nth-child(n+2) {
+    .carousel__item:nth-child(n+2) {
         display: block;
     }
 
-    .photo-slider__item:nth-child(n+3) {
+    .carousel__item:nth-child(n+3) {
         display: none;
     }
 
 }
 
 @media (min-width: 768px) {
+
+    .cards__subtitle {
+        font-size: var(--cards-subtitle-font-size-tablet);
+        line-height: var(--cards-subtitle-line-height-tablet);
+    }
+
     .cards__list {
         display: flex;
         flex-direction: row;
+    }
+
+    .cards__item {
+        justify-content: center;
+        align-items: center;
     }
 
     .cards__item:last-child {
         margin-top: 0;
     }
 
-    .photo-slider__list {
+    .cards__item-title {
+        font-size: var(--cards-list-title-font-size-tablet);
+        line-height: var(--cards-list-title-line-height-tablet);
+    }
+
+    .carousel__list {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .photo-slider__item:nth-child(n+3) {
+    .carousel__item:nth-child(n+3) {
         display: block;
     }
 
-    .photo-slider__item:nth-child(n+5) {
+    .carousel__item:nth-child(n+5) {
         display: none;
     }
 
@@ -220,15 +283,30 @@
         flex-direction: column;
     }
 
-    .photo-slider__list {
+    .cards__subtitle {
+        font-size: var(--cards-subtitle-font-size);
+        line-height: var(--cards-subtitle-line-height);
+    }
+
+    .cards__item-title {
+        font-size: var(--cards-list-title-font-size);
+        line-height: var(--cards-list-title-line-height);
+    }
+
+    .cards__item-caption {
+        font-size: var(--cards-list-caption-font-size);
+        line-height: var(--cards-list-caption-line-height);
+    }
+
+    .carousel__list {
         grid-template-columns: repeat(7, 1fr);
     }
 
-    .photo-slider__item:nth-child(n+5) {
+    .carousel__item:nth-child(n+5) {
         display: block;
     }
 
-    .photo-slider__item:nth-child(n+8) {
+    .carousel__item:nth-child(n+8) {
         display: none;
     }
 
