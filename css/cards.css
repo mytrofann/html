@@ -206,7 +206,7 @@
 .carousel__list {
     margin: 0;
     padding: 30px 40px;
-    display: grid;
+    display: inline-grid;
     grid-template-columns: repeat(1, 1fr);
     background-color: var(--cards-carousel-background-color);
 }

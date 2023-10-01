@@ -10,6 +10,23 @@
     /* Header start */
     --header-accent-background-color: rgb(255, 93, 40);
     --header-background-color: #f7f6f2;
+    --header-special-color: rgb(166, 58, 24);
+    --header-text-transform: uppercase;
+
+    --header-information-font-size-mobile: 11px;
+    --header-information-font-weight: 900;
+    --header-information-line-height-mobile: 15.73px;
+    --header-information-font-family: Roboto, sans-serif;
+    --header-social-text-decoration: underline;
+
+
+    --header-link-color: rgb(155, 158, 164);
+    --header-link-color-hover: rgb(255, 93, 40);
+    --header-link-font-size-mobile: 17px;
+    --header-link-font-size: 15px;
+    --header-link-font-weight: 500;
+    --header-link-font-family: Roboto, sans-serif;
+
     /* Header end */
     /* Welcome start */
     --welcome-background-color: rgb(255, 255, 255);
@@ -262,7 +279,6 @@
     --news-paragraph-accent-font-size: 19px;
     --news-paragraph-accent-font-weight: 500;
     --news-paragraph-accent-line-height: 26.6px;
-
     --news-list-title-color: rgb(75, 86, 106);
     --news-list-title-font-size-mobile: 22px;
     --news-list-title-font-size-tablet: 24px;
@@ -275,7 +291,6 @@
     --news-list-text-font-size: 17px;
     --news-list-text-font-weight: 400;
     --news-list-text-line-height: 24.48px;
-
     --news-text-transform: uppercase;
     --news-primary-font-family: Roboto, sans-serif;
     --news-secondary-font-family: "Vollkorn, sans-serif";

@@ -3,6 +3,10 @@
     grid-template-columns: var(--catering-grid-template-columns-mobile);
 }
 
+.catering__img-wrapper {
+    object-fit:cover;
+}
+
 .catering__img {
     object-fit: var(--catering-image-object-fit);
     object-position: var(--catering-image-object-position);
