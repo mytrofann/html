@@ -7,6 +7,44 @@
 }
 
 :root {
+    /* Header start */
+    --header-accent-background-color: rgb(255, 93, 40);
+    --header-background-color: #f7f6f2;
+    /* Header end */
+    /* Welcome start */
+    --welcome-background-color: rgb(255, 255, 255);
+    --welcome-h2-title-font-size: 11px;
+    --welcome-h2-title-font-weight: 900;
+    --welcome-h2-title-brend-color: rgb(255, 93, 40);
+    --welcome-subtitle-color: rgb(75, 86, 106);
+    --welcome-subtitle-font-size-mobile: 54px;
+    --welcome-subtitle-font-size-tablet: 57px;
+    --welcome-subtitle-font-size: 60px;
+    --welcome-subtitle-font-weight: 400;
+    --welcome-subtitle-line-height-mobile: 59.4px;
+    --welcome-subtitle-line-height-tablet: 62.7px;
+    --welcome-subtitle-line-height: 66px;
+    --welcome-paragraph-accent-color: rgb(130, 134, 143);
+    --welcome-paragraph-accent-font-size: 19px;
+    --welcome-paragraph-accent-font-weight: 500;
+    --welcome-paragraph-accent-line-height: 26.6px;
+    --welcome-paragraph-accent-font-family: Roboto, sans-serif;
+    --welcome-phone-number-color: rgb(75, 86, 106);
+    --welcome-phone-number-color-hover: rgb(255, 93, 40);
+    --welcome-phone-number-text-decoration-off: none;
+    --welcome-phone-number-text-decoration-on: underline;
+    --welcome-phone-number-font-size: 17.6px;
+    --welcome-phone-number-font-weight: 700;
+    --welcome-phone-number-font-family: Roboto, sans-serif;
+    --welcome-phone-number-line-height: 24.288px;
+    --welcome-phone-image-width: 24px;
+    --welcome-phone-image-height: auto;
+    --welcome-phone-image-color: rgb(75, 86, 106);
+    --welcome-phone-image-color-hover: rgb(255, 93, 40);
+    --welcome-primary-font-family: Roboto, sans-serif;
+    --welcome-secondary-font-family: "Vollkorn, sans-serif";
+    --welcome-text-transform: uppercase;
+    /* Welcome end */
     /* About-us start */
     --about-us-h2-title-font-size: 11px;
     --about-us-h2-title-font-weight: 900;
@@ -50,7 +88,7 @@
     --book-text-transform: uppercase;
     /* Book start */
     /* Offers start */
-
+    --offers-brend-color: rgb(255, 93, 40);
     --offers-h2-title-font-size: 11px;
     --offers-h2-title-font-weight: 900;
     --offers-subtitle-margin-top: 20px;
@@ -58,6 +96,7 @@
     --offers-subtitle-font-size-mobile: 34px;
     --offers-subtitle-font-size-tablet: 38px;
     --offers-subtitle-font-size: 42px;
+    --offers-subtitle-font-weight: 400;
     --offers-subtitle-line-height-mobile: 40.8px;
     --offers-subtitle-line-height-tablet: 45.6px;
     --offers-subtitle-line-height: 50.4px;
@@ -73,12 +112,10 @@
     --offers-list-title-line-height-mobile: 28.6px;
     --offers-list-title-line-height-tablet: 31.2px;
     --offers-list-title-line-height: 33.8px;
-
     --offers-list-text-color: rgb(155, 158, 164);
     --offers-list-text-font-size: 17px;
     --offers-list-text-font-weight: 400;
     --offers-list-text-line-height: 24.48px;
-
     --offers-secondary-font-family: "Vollkorn, sans-serif";
     --offers-primary-font-family: Roboto, sans-serif;
     --offers-text-transform: uppercase;
@@ -138,7 +175,7 @@
     --catering-secondary-font-family: "Vollkorn, sans-serif";
     --catering-text-transform: uppercase;
     /* Catering end */
-    /* Advantages start */
+    /* Cards start */
     --cards-h2-title-font-size: 11px;
     --cards-h2-title-font-weight: 900;
     --cards-h2-title-color: rgb(255, 255, 255);
@@ -192,6 +229,7 @@
     --cards-carousel-background-color: rgb(55, 62, 74);
     /* Cards end */
     /* Advantages start */
+    --advantages-background-color: #f7f6f2;
     --advantages-list-title-color: rgb(75, 86, 106);
     --advantages-list-title-font-size-mobile: 22px;
     --advantages-list-title-font-size-tablet: 24px;
@@ -206,8 +244,84 @@
     --advantages-list-text-font-weight: 400;
     --advantages-list-text-line-height: 24.48px;
     --advantages-list-text-font-family: Roboto, sans-serif;
-    --advantages-background-color: #f7f6f2;
     /* Advantages end */
+    /* News start */
+    --news-brend-color: rgb(255, 93, 40);
+    --news-h2-title-font-size: 11px;
+    --news-h2-title-font-weight: 900;
+    --news-subtitle-margin-top: 20px;
+    --news-subtitle-color: rgb(75, 86, 106);
+    --news-subtitle-font-size-mobile: 34px;
+    --news-subtitle-font-size-tablet: 38px;
+    --news-subtitle-font-size: 42px;
+    --news-subtitle-font-weight: 400;
+    --news-subtitle-line-height-mobile: 40.8px;
+    --news-subtitle-line-height-tablet: 45.6px;
+    --news-subtitle-line-height: 50.4px;
+    --news-paragraph-accent-color: rgb(130, 134, 143);
+    --news-paragraph-accent-font-size: 19px;
+    --news-paragraph-accent-font-weight: 500;
+    --news-paragraph-accent-line-height: 26.6px;
+
+    --news-list-title-color: rgb(75, 86, 106);
+    --news-list-title-font-size-mobile: 22px;
+    --news-list-title-font-size-tablet: 24px;
+    --news-list-title-font-size: 26px;
+    --news-list-title-font-weight: 400;
+    --news-list-title-line-height-mobile: 28.6px;
+    --news-list-title-line-height-tablet: 31.2px;
+    --news-list-title-line-height: 33.8px;
+    --news-list-text-color: rgb(155, 158, 164);
+    --news-list-text-font-size: 17px;
+    --news-list-text-font-weight: 400;
+    --news-list-text-line-height: 24.48px;
+
+    --news-text-transform: uppercase;
+    --news-primary-font-family: Roboto, sans-serif;
+    --news-secondary-font-family: "Vollkorn, sans-serif";
+    /* News end */
+    /* Footer start */
+    --footer-background-color: #f7f6f2;
+    --footer-text-color: rgb(155, 158, 164);
+    --footer-text-font-size-mobile: 14px;
+    --footer-text-font-size: 15px;
+    --footer-text-font-weight: 400;
+    --footer-text-line-height-mobile: 19.32px;
+    --footer-text-line-height: 20.7px;
+    --footer-text-font-family: Roboto, sans-serif;
+    --footer-list-title-color: rgb(75, 86, 106);
+    --footer-list-title-font-size-mobile: 22px;
+    --footer-list-title-font-size-tablet: 24px;
+    --footer-list-title-font-size: 26px;
+    --footer-list-title-font-weight: 400;
+    --footer-list-title-line-height-mobile: 28.6px;
+    --footer-list-title-line-height-tablet: 31.2px;
+    --footer-list-title-line-height: 33.8px;
+    --footer-list-title-font-family: "Vollkorn, sans-serif";
+    --footer-service-link-color: rgb(75, 86, 106);
+    --footer-service-link-color-hover: rgb(255, 93, 40);
+    --footer-service-link-font-size-mobile: 17px;
+    --footer-service-link-font-size: 11px;
+    --footer-service-link-font-weight: 700;
+    --footer-service-link-letter-spacing-mobile: 1.7px;
+    --footer-service-link-letter-spacing: 1.1px;
+    --footer-service-link-font-family: Roboto, sans-serif;
+    --footer-service-link-transform: uppercase;
+    --footer-service-text-decoration: underline;
+    --footer-link-color: rgb(155, 158, 164);
+    --footer-link-color-hover: rgb(75, 86, 106);
+    --footer-link-font-size-mobile: 17px;
+    --footer-link-font-size: 15px;
+    --footer-link-font-weight: 500;
+    --footer-link-font-family: Roboto, sans-serif;
+    --footer-contacts-icon-color: rgb(255, 93, 40);
+    --footer-contacts-item-color: rgb(155, 158, 164);
+    --footer-contacts-item-font-size: 15px;
+    --footer-contacts-item-font-weight: 400;
+    --footer-contacts-item-line-height: 20.7px;
+    --footer-contacts-item-font-style: italic;
+    --footer-contacts-item-font-family: Roboto, sans-serif;
+    /* Footer end */
 
     min-width: 320px;
     /* color */
@@ -251,6 +365,10 @@ button:hover {
 li {
     padding: 0;
     list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {

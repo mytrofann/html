@@ -4,6 +4,7 @@
 }
 
 .about-us__img {
+    padding: 0 30px;
     max-width: 555px;
     height: auto;
 }

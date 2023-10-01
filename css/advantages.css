@@ -2,6 +2,7 @@
     padding-top: 80px;
     padding-bottom: 65px;
     background-color: var(--advantages-background-color);
+    background-color: var(--advantages-background-color);
 }
 
 .advantages__list {
@@ -26,7 +27,7 @@
 }
 
 .advantages__item-title {
-    color: var(--catering-list-title-color);
+    color: var(--advantages-list-title-color);
     font-size: var(--advantages-list-title-font-size-mobile);
     font-family: var(--advantages-list-title-font-family);
     font-weight: var(--advantages-list-title-font-weight);

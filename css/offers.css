@@ -18,7 +18,7 @@
 }
 
 .offers__title {
-    color: var(--catering-brend-color);
+    color: var(--offers-brend-color);
     font-size: var(--offers-h2-title-font-size);
     font-weight: var(--offers-h2-title-font-weight);
     font-family: var(--offers-primary-font-family);
@@ -38,9 +38,10 @@
 .offers__subtitle {
     margin-top: var(--offers-subtitle-margin-top);
     color: var(--offers-subtitle-color);
-    font-size: var(--offers-subtitle-font-size-mobile);
     font-family: var(--offers-secondary-font-family);
-    font-weight: var(--offers-subtitle-line-height-mobile);
+    font-size: var(--offers-subtitle-font-size-mobile);
+    font-weight: var(--offers-subtitle-font-weight);
+    line-height: var(--offers-subtitle-line-height-mobile);
 }
 
 .offers__text-bold {
@@ -94,7 +95,7 @@
 
     .offers__subtitle {
         font-size: var(--offers-subtitle-font-size-tablet);
-        font-weight: var(--offers-subtitle-line-height-tablet);
+        line-height: var(--offers-subtitle-line-height-tablet);
     }
 
     .offers__item {
@@ -119,7 +120,7 @@
 
     .offers__subtitle {
         font-size: var(--offers-subtitle-font-size);
-        font-weight: var(--offers-subtitle-line-height);
+        line-height: var(--offers-subtitle-line-height);
     }
 
     .offers__list {

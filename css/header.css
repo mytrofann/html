@@ -1,5 +1,5 @@
 .page-header {
-    background-color: var(--);
+    background-color: var(--header-background-color);
 }
 
 .page-header__logo-img {
@@ -8,6 +8,7 @@
 
 .page-header__information {
     display: block;
+    background-color: var(--header-background-color);
 }
 
 .offer__phone-img svg {
@@ -17,7 +18,7 @@
 @media (min-width: 992px) {
     .page-header__information {
         display: inline;
-        background-color: var(--background-color-accent);
+        background-color: var(--header-accent-background-color);
     }
     
 }
