@@ -142,6 +142,7 @@
     font-weight: var(--cards-item-link-font-weight);
     line-height: var(--cards-item-link-line-height);
     text-transform: var(--cards-text-transform);
+    text-decoration: var(--cards-text-text-decoration);
 }
 
 .carousel__wrapper {
